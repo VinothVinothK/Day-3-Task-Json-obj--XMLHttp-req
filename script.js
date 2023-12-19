@@ -6,10 +6,10 @@ let obj2 = {age:"5",
             name: "person 1 ",
            };
 
-const obj1keys = Object.keys(obj1);
-const obj2keys = Object.keys(obj2);
+const obj1Json = JSON.stringify(obj1);
+const obj2Json = JSON.stringify(obj2);
 
-if (obj1keys.length ==obj2keys.length){
+if (obj1Json===obj2Json){
     console.log("True");
 }else{
     console.log("false");
